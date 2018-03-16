@@ -1,0 +1,27 @@
+<%include partials/headerNoLog%>
+	
+
+
+	<div class="container mt-5">
+		<%if(result.length==0){%>
+			<h2>No result return, try again!</h2>
+		<%}else{%>
+			<h2>We Found:</h2>
+			<% result.forEach(function(r){ %>
+			<a href= "/product/<%= r.itemName%>" >
+				<h3>
+					<%=r.itemName%>
+				</h3>
+			</a>
+
+			<%});%>
+		<%}%>
+	</div>
+
+	
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SBUPC</title>
+	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
+	<!--<script src="js/bootstrap.js"></script>-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+	<style type="text/css">
+		.debbug{
+			background-color: black;
+			border:1px solid white;
+		}
+	</style>
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top" style="background-color: rgba(148, 23, 20, 1);">
+	  <a class="navbar-brand" href="index.html" style="color:white;">SBUPC</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav">
+	    <!-- CONTENT OF NAVBAR -->
+	      <li class="nav-item active">
+	        <a class="nav-link" href="index.html" style="color:white;">CPU <span class="sr-only">(current)</span></a>
+	      </li>
+
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#" style="color:white;">Memory <span class="sr-only">(current)</span></a>
+	      </li>
+
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#" style="color:white;">GPU <span class="sr-only">(current)</span></a>
+	      </li>
+
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#" style="color:white;">MotherBoard <span class="sr-only">(current)</span></a>
+	      </li>
+
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#" style="color:white;">PowerSupply <span class="sr-only">(current)</span></a>
+	      </li>
+
+	     <div class="nav-item dropdown"style="width:100%;min-width:6.9rem;">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white;">
+	          HardDrive
+	        </a>
+	        <li class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          <a class="dropdown-item" href="#">HDD</a>
+	          <a class="dropdown-item" href="#">SSD</a>
+	        </li>
+	      </div>
+	      
+
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#" style="color:white;">Others</a>
+	      </li>	      
+	    </ul>
+
+  		<div class = "ml-lg-4 input-group mr-auto " style="width:50%;">
+  			<button class="btn btn-primary my-2 my-sm-0" type="button">Search!</button>
+      		<input type="Search" class="form-control mr-sm-2" placeholder="Search" aria-label="Search" style="width:50">
+		</div>
+
+
+	    <div class=" nav navbar-nav navbar-right" >
+	    		<div style="width:100%;min-width:10.1rem;">
+	    		<button type="button" class="btn btn-primary" value="register" onclick="location.href='register.html'" >Sign Up</button>
+	    		<button type="button" class="btn btn-primary ml-lg-1" onclick="location.href='register.html'">Login</button>
+ 				</div>
+ 		</div>
+	</nav>
+
+	<div class="container mt-5">
+		<div class="row">
+			<div class="col-lg-4 col-md-4 " >
+				<img src="img/i77700k.jpg" style="width:100%;">
+			</div>
+			<div class="col-lg-8 col-md-8"> 
+				<span><h4>Intel Core i7-7700K Kaby Lake Quad-Core 4.2 GHz </h4></span>
+				<span><h4>LGA 1151 91W BX80677I77700K Desktop Processor</h4></span>
+				<div class="alert alert-danger" role="alert">
+					Extra savings w/ promo code EMCBBCE27, ends 11/24
+				</div>
+				<ul >
+				  <li >For A Great VR Experience</li>
+				  <li >OS Support - Windows 10 Only</li>
+				  <li >Max Turbo Frequency 4.5 GHz</li>
+				  <li >Intel HD Graphics 630</li>
+				  <li >Unlocked Processor</li>
+				  <li>DDR4 & DDR3L Support</li>
+				  <li>Display Resolution up to 4096 x 2304</li>
+				  <li>Socket LGA 1151</li>
+				  <li>Cooler / thermal paste not included</li>
+				</ul>
+				<div style="padding-left:4rem;"><h2>$289.99</h2></div>
+				<div class="mt-4" style="padding-left:2rem;">
+					<a class="btn btn-primary" href="#" role="button">Add To Cart</a>
+					<a class="btn btn-primary" href="#" role="button">Buy It</a>
+				</div>
+
+			</div>
+			<div>
+
+			</div>
+		</div>	
+	</div>
+
+
+
+
+	</body>
+	</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SBUPC</title>
+	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
+	<!--<script src="js/bootstrap.js"></script>-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+	<style type="text/css">
+		.debbug{
+			/*background-color: black;
+			border:1px solid white;*/
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top" style="background-color: rgba(148, 23, 20, 1);">
+	  <a class="navbar-brand" href="index.html" style="color:white;">SBUPC</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav">
+	    <!-- CONTENT OF NAVBAR -->
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#cpu" style="color:white;">CPU <span class="sr-only">(current)</span></a>
+	      </li>
+
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#memory" style="color:white;">Memory <span class="sr-only">(current)</span></a>
+	      </li>
+
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#" style="color:white;">GPU <span class="sr-only">(current)</span></a>
+	      </li>
+
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#" style="color:white;">MotherBoard <span class="sr-only">(current)</span></a>
+	      </li>
+
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#" style="color:white;">PowerSupply <span class="sr-only">(current)</span></a>
+	      </li>
+
+	     <div class="nav-item dropdown"style="width:100%;min-width:6.9rem;">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white;">
+	          HardDrive
+	        </a>
+	        <li class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          <a class="dropdown-item" href="#">HDD</a>
+	          <a class="dropdown-item" href="#">SSD</a>
+	        </li>
+	      </div>
+	      
+
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#" style="color:white;">Others</a>
+	      </li>	      
+	    </ul>
+
+  		<div class = "ml-lg-4 input-group mr-auto " style="width:50%;">
+  			<button class="btn btn-primary my-2 my-sm-0" type="button">Search!</button>
+      		<input type="Search" class="form-control mr-sm-2" placeholder="Search" aria-label="Search" style="width:50">
+		</div>
+
+
+	    <div class=" nav navbar-nav navbar-right" >
+	    		<div style="width:100%;min-width:10.1rem;">
+	    		<button type="button" class="btn btn-primary" value="register" onclick="location.href='register.html'" >Sign Up</button>
+	    		<button type="button" class="btn btn-primary ml-lg-1" onclick="location.href='register.html'">Login</button>
+ 				</div>
+ 		</div>
+	</nav>
+	<!-- end of navbar -->
+
+	<!-- this is a carousel -->
+	<div id="carouselExampleControls" class="carousel slide container mt-2" data-ride="carousel">
+  		<div class="carousel-inner">
+    		<div class="carousel-item active">
+      			<img class="d-block w-100" src="img/1.jpg" alt="First slide">
+    		</div>
+   			<div class="carousel-item">
+      			<img class="d-block w-100" src="img/2.jpg" alt="Second slide">
+    		</div>
+    		<div class="carousel-item">
+      			<img class="d-block w-100" src="img/3.jpg" alt="Third slide">
+    		</div>
+  		</div>
+  		<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    		<span class="sr-only">Previous</span>
+  		</a>
+  		<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    		<span class="sr-only">Next</span>
+  		</a>
+	</div>
+
+	<div class="container mt-5">
+		<h2 id="cpu">CPU</h2>
+		<div class="row">
+			<div class="col-xl-3 col-md-6  mt-2 ">
+				<div class="card" style="width: 16rem;">
+					<a href="product.html">
+  						<img class="card-img-top" src="img/i7.jpg" alt="Card image cap">
+  					</a>
+  				<div class="card-body">
+    				<p class="card-text">Intel Core i7-7700k</p>
+    				<p class="card-text">$289.99</p>
+  				</div>
+				</div>
+		</div>
+
+		<div class="col-xl-3 col-md-6  mt-2 ">
+			<div class="card" style="width: 16rem;">
+					<img class="card-img-top" src="img/i5.jpg" alt="Card image cap">
+				<div class="card-body">
+					<p class="card-text">Intel Core i5-7600k</p>
+					<p class="card-text">$199.99</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xl-3 col-md-6  mt-2 ">
+			<div class="card" style="width: 16rem;">
+					<img class="card-img-top" src="img/i3.jpg" alt="Card image cap">
+				<div class="card-body">
+					<p class="card-text">IIntel Core i3-7350k</p>
+					<p class="card-text">$289.99</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xl-3 col-md-6  mt-2">
+			<div class="card" style="width: 16rem;">
+					<img class="card-img-top" src="img/r7.jpg" alt="Card image cap">
+				<div class="card-body">
+					<p class="card-text">AMD RYZEN 7 1700</p>
+					<p class="card-text">$269.99</p>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+
+	<div class="container mt-5">
+		<h2 id="memory">Memory</h2>
+		<div class="row">
+			<div class="col-lg-3 col-md-6 col-sm-6 mt-2 ">
+				<div class="card" style="width: 16rem;">
+  					<img class="card-img-top" src="img/g.skill.jpg" alt="Card image cap">
+  				<div class="card-body">
+    				<p class="card-text">G.SKILL Ripjaws V Series</p>
+    				<p class="card-text">$190.99</p>
+  				</div>
+				</div>
+		</div>
+
+		<div class="col-lg-3 col-md-6 col-sm-6 mt-2 ">
+			<div class="card" style="width: 16rem;">
+					<img class="card-img-top" src="img/team.jpg" alt="Card image cap">
+				<div class="card-body">
+					<p class="card-text">Team T-Force DARK</p>
+					<p class="card-text">$174.99</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-md-6 col-sm-6 mt-2 ">
+			<div class="card" style="width: 16rem;">
+					<img class="card-img-top" src="img/corsair.jpg" alt="Card image cap">
+				<div class="card-body">
+					<p class="card-text">CORSAIR Vengeance RGB</p>
+					<p class="card-text">$434.99</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-md-6 col-sm-6 mt-2 ">
+			<div class="card" style="width: 16rem;">
+					<img class="card-img-top" src="img/gskill.t.jpg" alt="Card image cap">
+				<div class="card-body">
+					<p class="card-text">G.SKILL TridentZ RGB Series</p>
+					<p class="card-text">$229.99</p>
+				</div>
+			</div>
+			</div>
+			</div>
+			</div>
+			<nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top" style="background-color: rgba(148, 23, 20, 1);">
+			<div class="container mt-5">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 " >
+				<img src="img/githut.png" style="width:100%;">
+				</div>
+				</div>
+				<span><h4>Xin Chen</h4></span>
+				<span><h4>Henqi Zhu</h4></span>
+				<span><h4>Jia Chen</h4></span>
+		</div>
+		</div>
+	</div>
+
+
+
+
+
+</body>
+</html>

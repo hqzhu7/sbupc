@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SBUPC</title>
+	<link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
+
+
+	<script src="/js/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+	<script src="/js/popper.js" crossorigin="anonymous"></script>
+
+	<!--<script src="js/bootstrap.js"></script>-->
+	<script src="/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+	<style type="text/css">
+		.debbug{
+			background-color: black;
+			border:1px solid white;
+		}
+	</style>
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top" style="background-color: rgba(148, 23, 20, 1);">
+	  <a class="navbar-brand" href="/" style="color:white;">SBUPC</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav">
+	    <!-- CONTENT OF NAVBAR -->
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#" style="color:white;">CPU <span class="sr-only">(current)</span></a>
+	      </li>
+
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#" style="color:white;">Memory <span class="sr-only">(current)</span></a>
+	      </li>
+
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#" style="color:white;">GPU <span class="sr-only">(current)</span></a>
+	      </li>
+
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#" style="color:white;">MotherBoard <span class="sr-only">(current)</span></a>
+	      </li>
+
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#" style="color:white;">PowerSupply <span class="sr-only">(current)</span></a>
+	      </li>
+
+	     <div class="nav-item dropdown"style="width:100%;min-width:6.9rem;">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white;">
+	          HardDrive
+	        </a>
+	        <li class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          <a class="dropdown-item" href="#">HDD</a>
+	          <a class="dropdown-item" href="#">SSD</a>
+	        </li>
+	      </div>
+	      
+
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#" style="color:white;">Others</a>
+	      </li>	      
+	    </ul>
+
+  		<form method="POST" class = "ml-lg-4 input-group mr-auto " style="width:50%;">
+  			<a href="#">
+  				<button class="btn btn-primary my-2 my-sm-0" type="submit" formaction="/search"> Search!</button>
+  			</a>
+      		<input type="Search" class="form-control mr-sm-2" name ="getSearch" placeholder="Search" aria-label="Search" style="width:50">
+      		</form>
+
+
+	    <!-- <div class=" nav navbar-nav navbar-right" >
+	    		<div style="width:100%;min-width:4.5rem;">
+	    		<button type="button" class="btn btn-primary" >Sign Up</button>
+	    		<button type="button" class="btn btn-primary ml-lg-1">Login</button>
+ 				</div>
+ 		</div> -->
+	</nav>
+
+	<div class="container mt-5" style="width:100%;max-width:50rem;">
+		<%if(message.length!=0){%>
+		<div class="alert alert-danger" role="alert"><%= message %></div>
+		<%}%>
+		<form method="POST">
+			  <div class="form-row">
+			    <div class="form-group col-md-6">
+			      <label for="inputEmail4">Email</label>
+			      <input type="email" name="getEmail" class="form-control" id="inputEmail4" placeholder="Email" required>
+			    </div>
+			    <div class="form-group col-md-6">
+			      <label for="inputPassword4">Password</label>
+			      <input type="password" name="getPwd" class="form-control" id="inputPassword4" placeholder="Password" required>
+			    </div>
+			  </div>
+
+			  <div class="form-row">
+			    <div class="form-group col-md-6">
+			      <label for="inputEmail4">First Name</label>
+			      <input type="input" class="form-control" id="FirstName" placeholder="First Name" name="getFirstName">
+
+			    </div>
+			    <div class="form-group col-md-6">
+			      <label for="inputPassword4">Last Name</label>
+			      <input type="input" class="form-control" id="LastName" placeholder="Last Name" name="getLastName">
+			    </div>
+			  </div>
+
+			  <div class="form-group">
+			    <label for="inputAddress">Address</label>
+			    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" name="getAddress">
+			  </div>
+
+			  <div class="form-group">
+			    <label for="inputAddress2">Address 2</label>
+			    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" name="getAddress2">
+			  </div>
+
+
+			  <div class="form-row">
+			    <div class="form-group col-md-6">
+			      <label for="inputCity">City</label>
+			      <input type="text" class="form-control" id="inputCity" name="getCity">
+			    </div>
+			    <div class="form-group col-md-4">
+			      <label for="inputState">State</label>
+			      <select id="inputState" class="form-control" name="getState">
+			        <option selected>Choose...</option>
+			        <option>New York</option>
+			        <option></option>
+			      </select>
+			    </div>
+			    <div class="form-group col-md-2">
+			      <label for="inputZip">Zip</label>
+			      <input type="text" class="form-control" id="inputZip" name="getZip">
+			    </div>
+			  </div>
+
+			  <button type="submit" formaction="/singup"  class="btn btn-primary">Register</button>
+			  <button type="submit" formaction="/login"  class="btn btn-primary">Log In</button>
+			  </form>	
+			  
+			  
+	</div>
+
+
+
+
+</body>
+</html>
