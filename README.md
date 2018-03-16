@@ -7,9 +7,8 @@ Functions are:
                5. chechout the wole shopping cart  
                6. search for items by name, type, or seller  
 
-Front end is implemented by Bootstrap and EJS
-All information(itme, customer, orders) are stored in the local database (MySQL),  
-I posted some screen shoots of database.  
+Front end is implemented by Bootstrap and EJS.  
+All information(itme, customer, orders) are stored in the local database (MySQL),I posted some screen shoots of database.  
 Only listed CPU and Memory for test, other items are same as these two.  
 This server is on Amazon Web Service, I will turn it off in Dec/2018.  
 You can visit it by copy&paste 18.218.55.99:8080 into browser.  
