@@ -1,5 +1,6 @@
 This websit is for learning Node.js, Express, HTML+CSS+JavaScript, and MySQL  
-Functions are: 1. sign up  
+Functions are:   
+1. sign up  
                2. log in & log out  
                3. checkout single item  
                4. add items to shopping cart  
